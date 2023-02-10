@@ -1,0 +1,17 @@
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:mason a foaf:Person ;
+    rdfs:label "Mason Carter" ;
+    foaf:mbox <mailto:mason@example.org> ;
+    foaf:name "Mason Carter" ;
+    foaf:nick "mason"@en .
+
+ex:shyla a foaf:Person ;
+    rdfs:label "Shyla Sharples" ;
+    foaf:mbox <mailto:shyla@example.org> ;
+    foaf:name "Shyla Sharples" ;
+    foaf:nick "shyla"^^xsd:string .
+
